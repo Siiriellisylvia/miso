@@ -9,17 +9,23 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-html,
+/* html,
 body {
   @apply bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
-}
+} */
 
 :root {
   --radius: 0.6rem;
+  --primary-green: #103b28;
+  --primary-green-30: hwb(153 6% 76% / 0.30);
+  --primary-white: #f7f4ed;
+  --secondary-white: #E6E2D8;
+  --grey-color: #e9e9eb;
+  --black-color: #000000;
 }
 
 @theme inline {
@@ -27,4 +33,17 @@ body {
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--grey-color);
 }
